@@ -15,9 +15,6 @@ tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
 echo "🌐 Web access (read-write):"
 tmate -S /tmp/tmate.sock display -p '#{tmate_web}'
 
-# Start Node.js app in background
-node app.js &
-
 # Wait for 3000 seconds (50 minutes)
 sleep 3000
 
