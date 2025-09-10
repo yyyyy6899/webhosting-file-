@@ -12,4 +12,7 @@ RUN apt-get update && \
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
+EXPOSE 8444
+EXPOSE 443
+
 CMD ["/start.sh"]
